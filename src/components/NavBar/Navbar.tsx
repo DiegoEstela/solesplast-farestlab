@@ -53,7 +53,7 @@ const Navbar = () => {
 
         <StyledDrawer anchor="left" open={open} onClose={handleMenuToggle}>
           <List>
-            <StyledListItem onClick={() => handleNavigate("/clients")}>
+            <StyledListItem onClick={() => handleNavigate("/customers")}>
               <ListItemIcon>
                 <PeopleIcon />
               </ListItemIcon>
@@ -82,7 +82,7 @@ const Navbar = () => {
 
         <NavbarIcons>
           {/* Notificaciones */}
-          <IconButton color="default" sx={{ fontSize: "1.8rem" }}>
+          <IconButton color="default" sx={{ fontSize: "2rem" }}>
             <Badge badgeContent={4} color="error">
               <NotificationsIcon fontSize="inherit" color="action" />
             </Badge>
@@ -92,7 +92,7 @@ const Navbar = () => {
           <IconButton
             color="default"
             onClick={() => navigate("/")}
-            sx={{ fontSize: "1.8rem", padding: 0 }}
+            sx={{ fontSize: "2.2rem", padding: 0 }}
           >
             <HomeIcon fontSize="inherit" color="action" />
           </IconButton>
