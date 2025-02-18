@@ -4,12 +4,11 @@ export const HomeContainer = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  justifyContent: "center",
-  padding: theme.spacing(3),
+  justifyContent: "flex-start",
+  paddingTop: "90px",
   gap: theme.spacing(4),
   backgroundColor: theme.palette.background.default,
-  height: "90vh",
-  overflow: "hidden",
+  minHeight: "90vh",
 }));
 
 export const MetricsContainer = styled("div")(({ theme }) => ({
