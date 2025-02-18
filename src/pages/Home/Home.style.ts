@@ -4,8 +4,8 @@ export const HomeContainer = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  justifyContent: "flex-start",
-  paddingTop: "90px",
+  justifyContent: "center",
+  paddingTop: "70px",
   gap: theme.spacing(4),
   backgroundColor: theme.palette.background.default,
   minHeight: "90vh",
@@ -17,7 +17,7 @@ export const MetricsContainer = styled("div")(({ theme }) => ({
   gap: theme.spacing(2),
   justifyContent: "center",
   alignItems: "center",
-  maxWidth: "80%",
+  maxWidth: "70%",
 }));
 
 export const MetricWidget = styled("div")(({ theme }) => ({
