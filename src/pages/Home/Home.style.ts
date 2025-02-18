@@ -8,7 +8,7 @@ export const HomeContainer = styled("div")(({ theme }) => ({
   paddingTop: "70px",
   gap: theme.spacing(4),
   backgroundColor: theme.palette.background.default,
-  minHeight: "90vh",
+  minHeight: "80vh",
 }));
 
 export const MetricsContainer = styled("div")(({ theme }) => ({

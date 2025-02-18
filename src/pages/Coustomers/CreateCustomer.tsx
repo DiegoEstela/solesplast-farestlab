@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { Container, TextField, Button, Typography, Box } from "@mui/material";
+import { Container, TextField, Button, Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 interface CustomerForm {
@@ -32,11 +32,8 @@ const CreateCustomer = () => {
 
   return (
     <Container maxWidth="sm">
-      <Typography variant="h5" align="center" marginTop={4}>
-        Crear Nuevo Cliente
-      </Typography>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Box display="flex" flexDirection="column" gap={2} marginTop={3}>
+        <Box display="flex" flexDirection="column" gap={2} marginTop={10}>
           <TextField
             label="Nombre"
             {...register("name", { required: true })}
