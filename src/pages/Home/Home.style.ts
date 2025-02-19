@@ -6,8 +6,8 @@ export const HomeContainer = styled(Box)(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  height: "80vh",
-  padding: theme.spacing(4),
+  height: "78vh",
+
   backgroundColor: theme.palette.background.default,
 }));
 
