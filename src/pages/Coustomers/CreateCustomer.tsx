@@ -33,12 +33,20 @@ const CreateCustomer = () => {
   return (
     <Container maxWidth="sm">
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Box display="flex" flexDirection="column" gap={2} marginTop={10}>
+        <Box
+          display="flex"
+          flexDirection="column"
+          gap={2}
+          marginTop={10}
+          sx={{ color: "#1C1C1E" }} // Texto más oscuro
+        >
           <TextField
             label="Nombre"
             {...register("name", { required: true })}
             error={!!errors.name}
             helperText={errors.name && "Este campo es obligatorio"}
+            InputLabelProps={{ style: { color: "#1C1C1E" } }} // Etiquetas oscuras
+            sx={{ input: { color: "#1C1C1E" } }} // Texto dentro del input
           />
           <TextField
             label="Email"
@@ -46,12 +54,16 @@ const CreateCustomer = () => {
             {...register("email", { required: true })}
             error={!!errors.email}
             helperText={errors.email && "Este campo es obligatorio"}
+            InputLabelProps={{ style: { color: "#1C1C1E" } }}
+            sx={{ input: { color: "#1C1C1E" } }}
           />
           <TextField
             label="CUIL"
             {...register("cuil", { required: true })}
             error={!!errors.cuil}
             helperText={errors.cuil && "Este campo es obligatorio"}
+            InputLabelProps={{ style: { color: "#1C1C1E" } }}
+            sx={{ input: { color: "#1C1C1E" } }}
           />
           <TextField
             label="Fecha de Alta"
@@ -59,30 +71,40 @@ const CreateCustomer = () => {
             {...register("registrationDate", { required: true })}
             error={!!errors.registrationDate}
             helperText={errors.registrationDate && "Este campo es obligatorio"}
+            InputLabelProps={{ style: { color: "#1C1C1E" } }}
+            sx={{ input: { color: "#1C1C1E" } }}
           />
           <TextField
             label="Nombre de Contacto"
             {...register("contactName", { required: true })}
             error={!!errors.contactName}
             helperText={errors.contactName && "Este campo es obligatorio"}
+            InputLabelProps={{ style: { color: "#1C1C1E" } }}
+            sx={{ input: { color: "#1C1C1E" } }}
           />
           <TextField
             label="Número Celular"
             {...register("contactPhone", { required: true })}
             error={!!errors.contactPhone}
             helperText={errors.contactPhone && "Este campo es obligatorio"}
+            InputLabelProps={{ style: { color: "#1C1C1E" } }}
+            sx={{ input: { color: "#1C1C1E" } }}
           />
           <TextField
             label="Dirección"
             {...register("address", { required: true })}
             error={!!errors.address}
             helperText={errors.address && "Este campo es obligatorio"}
+            InputLabelProps={{ style: { color: "#1C1C1E" } }}
+            sx={{ input: { color: "#1C1C1E" } }}
           />
           <TextField
             label="Ciudad"
             {...register("city", { required: true })}
             error={!!errors.city}
             helperText={errors.city && "Este campo es obligatorio"}
+            InputLabelProps={{ style: { color: "#1C1C1E" } }}
+            sx={{ input: { color: "#1C1C1E" } }}
           />
         </Box>
         <Box display="flex" justifyContent="space-between" marginTop={4}>
