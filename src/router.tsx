@@ -2,8 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import Products from "./pages/Products/Products";
 import Services from "./pages/Services/Services";
 import Home from "./pages/Home/Home";
-import Customers from "./pages/Coustomers/Customers";
-import CreateCustomer from "./pages/Coustomers/CreateCustomer";
+import Customers from "./pages/Customers/Customers";
+import CreateCustomer from "./pages/Customers/CreateCustomer";
 
 const AppRouter = () => {
   return (
