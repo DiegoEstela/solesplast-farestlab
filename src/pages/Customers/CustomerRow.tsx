@@ -1,4 +1,10 @@
-import { TableRow, TableCell, IconButton } from "@mui/material";
+import {
+  TableRow,
+  TableCell,
+  IconButton,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import EditIcon from "@mui/icons-material/Edit";
 import SaveIcon from "@mui/icons-material/Save";
 import DeleteIcon from "@mui/icons-material/Delete";
@@ -23,9 +29,18 @@ const CustomerRow = ({
   onSave,
   onDelete,
 }: Props) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <TableRow>
-      <TableCell sx={{ textAlign: "left", padding: "6px" }}>
+      <TableCell
+        sx={{
+          textAlign: "left",
+          padding: "6px",
+          fontSize: isMobile ? "12px" : "16px",
+        }}
+      >
         {editingClient === client.id ? (
           <input
             defaultValue={client.name}
@@ -35,17 +50,29 @@ const CustomerRow = ({
               padding: "4px",
               borderRadius: "6px",
               border: "1px solid #ccc",
-              fontSize: "14px",
+              fontSize: isMobile ? "12px" : "16px",
             }}
           />
         ) : (
           client.name
         )}
       </TableCell>
-      <TableCell sx={{ textAlign: "center", padding: "6px" }}>
+      <TableCell
+        sx={{
+          textAlign: "center",
+          padding: "6px",
+          fontSize: isMobile ? "12px" : "16px",
+        }}
+      >
         {client.contact_phone}
       </TableCell>
-      <TableCell sx={{ textAlign: "center", padding: "6px" }}>
+      <TableCell
+        sx={{
+          textAlign: "center",
+          padding: "6px",
+          fontSize: isMobile ? "12px" : "16px",
+        }}
+      >
         {client.cuil}
       </TableCell>
       <TableCell sx={{ textAlign: "right", padding: "6px" }}>

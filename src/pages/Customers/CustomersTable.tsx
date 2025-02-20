@@ -87,6 +87,7 @@ const CustomersTable = ({
         page={page}
         onPageChange={onPageChange}
         onRowsPerPageChange={onRowsPerPageChange}
+        labelRowsPerPage="Filas por página"
       />
     </TableContainer>
   );
